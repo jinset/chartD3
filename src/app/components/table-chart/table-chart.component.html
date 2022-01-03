@@ -1,0 +1,23 @@
+
+<ng-container *ngIf="!valueChar">
+  <div class="text-center">
+    <p>Select a bar to show the data</p>
+  </div>
+</ng-container>
+
+<ng-container *ngIf="valueChar">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Date</th>
+        <th scope="col">Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">{{valueChar.date}}</th>
+        <th scope="row">{{valueChar.value}}</th>
+      </tr>
+    </tbody>
+  </table>
+</ng-container>
